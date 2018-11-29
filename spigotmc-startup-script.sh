@@ -26,7 +26,7 @@ BACKUPPATH="/home/$USERNAME/mcserver_backup/"	#The file path for the directory f
 MAXHEAP=896			#The maximum amount of ram allocated to the server
 MINHEAP=512			#The minimum amount of ram allocated to the server
 HISTORY=1024			
-INVOCATION="java -Xms${MINHEAP}M -Xmx${MAXHEAP}M -jar $SERVICE $OPTIONS"
+INVOCATION="java -Xms${MINHEAP}M -Xmx${MAXHEAP}M -XX:+UseConcMarkSweepGC -jar $SERVICE $OPTIONS"
 
 
 ME=`whoami`
