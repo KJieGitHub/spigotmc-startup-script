@@ -86,7 +86,7 @@ mc_stop() {
   if pgrep -u $USERNAME -f $SERVICE > /dev/null
   then				#Alerts the users on the server of incoming server shut down
     echo "Stopping $SERVICE"
-    as_user "screen -p 0 -S $SCREENNAME -X eval 'stuff \"say SERVER SHUTTING DOWN IN 10 SECONDS. Saving map...\"\015'"	
+    as_user "screen -p 0 -S $SCREENNAME -X eval 'stuff \"say 伺服器即將在10秒內離線。地圖儲存中...\"\015'"	
     as_user "screen -p 0 -S $SCREENNAME -X eval 'stuff \"save-all\"\015'"
     sleep 10
     as_user "screen -p 0 -S $SCREENNAME -X eval 'stuff \"stop\"\015'"
