@@ -1,0 +1,1 @@
+# spigotmc-startup-script
