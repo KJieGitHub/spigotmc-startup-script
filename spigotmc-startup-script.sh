@@ -19,7 +19,7 @@
 SERVICE='spigot.jar'	#The name of the jar file used to boot the server, also the name of the process
 SCREENNAME='minecraft'	#The name screen will use
 OPTIONS='nogui'			#Optional arguments for MineCraft
-USERNAME='ubuntu'			#The user name of the Linux account to be used
+USERNAME='minecraft'			#The user name of the Linux account to be used
 WORLD='world'			#The selected world to load when the server boots
 MCPATH="/home/$USERNAME/server"	#The file path for the directory where the server jar is held
 BACKUPPATH="/home/$USERNAME/mcserver_backup/"	#The file path for the directory for the back ups of the server
