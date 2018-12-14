@@ -23,8 +23,8 @@ USERNAME='minecraft'			#The user name of the Linux account to be used
 WORLD='world'			#The selected world to load when the server boots
 MCPATH="/home/$USERNAME/server"	#The file path for the directory where the server jar is held
 BACKUPPATH="/home/$USERNAME/mcserver_backup/"	#The file path for the directory for the back ups of the server
-MAXHEAP=896			#The maximum amount of ram allocated to the server
-MINHEAP=512			#The minimum amount of ram allocated to the server
+MAXHEAP=1536			#The maximum amount of ram allocated to the server
+MINHEAP=1024			#The minimum amount of ram allocated to the server
 HISTORY=1024			
 INVOCATION="java -Xms${MINHEAP}M -Xmx${MAXHEAP}M -XX:+UseConcMarkSweepGC -jar $SERVICE $OPTIONS"
 
