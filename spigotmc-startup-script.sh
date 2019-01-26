@@ -112,7 +112,8 @@ mc_backup() {
    as_user "tar -C \"$MCPATH\" -cf \"$BACKUP_FILE\" $WORLD"
    as_user "tar -C \"$MCPATH\" -rf \"$BACKUP_FILE\" ${WORLD}_nether"
    as_user "tar -C \"$MCPATH\" -rf \"$BACKUP_FILE\" ${WORLD}_the_end"
-   as_user "tar -C \"$MCPATH\" -rf \"$BACKUP_FILE\" plugins"
+   as_user "tar -C \"$MCPATH\" -rf \"$BACKUP_FILE\" server.properties"
+   #as_user "tar -C \"$MCPATH\" -rf \"$BACKUP_FILE\" plugins"
 
    echo "Backing up $SERVICE"
    as_user "tar -C \"$MCPATH\" -rf \"$BACKUP_FILE\" $SERVICE"
